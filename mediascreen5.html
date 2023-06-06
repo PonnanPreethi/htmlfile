@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Media Query Example</title>
+</head>
+<body>
+	<h1>Welcome to my Website</h1>
+	<p> This is a responsive media query example</p>
+	<div class="container">
+	    <div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+	</div>
+	<style>
+		/* Default styles for all screen sizes*/
+		body{
+			font-family: Arial,sans-serif;
+			text-align: center;
+
+		}
+		h1{
+			color:white;
+
+		}
+		.box{
+			width: 100%;
+			height: 200px;
+			background-color: lightcoral;
+			margin-bottom: 20px;
+		}
+
+		p{
+			color:white;
+		}
+		/*Media query for screens larger than 768px*/
+		
+		/* Media query for screens smaller than 768px*/
+		@media screen and (max-width:767px)
+		{
+			.container{
+				display:flex;
+			}
+			body{
+				background-color: lightblue;
+			}
+			h1{
+				font-size: 24px;
+			}
+			.box{
+				height: 150px;
+						}
+			p{
+				font-size: 14px;
+			}
+			.box1 {
+				background-color: blue;
+				margin-right:5px;
+			}
+			.box2{
+				background-color: red;
+			}
+			.box3 {
+				background-color: green;
+			}
+		}
+	</style>
+
+</body>
+</html>

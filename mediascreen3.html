@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Resonsive Media Queries</title>
+</head>
+<body>
+	<div class="container">
+		<h1> Responsive Media queries example</h1>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: arial,sans-serif;
+
+		}
+		.container{
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+
+		}
+		h1{
+			text-align: center;
+		}
+		.box{
+			width: 100%;
+			height: 200px;
+			background-color: lightblue;
+			margin-bottom: 20px;
+		}
+		@media (max-width767px){
+			.container{
+				max-width: 100%;
+				padding: 10px;
+			}
+			.box{
+				height: 150px;
+			}
+		}
+	</style>
+
+
+
+</body>
+</html>

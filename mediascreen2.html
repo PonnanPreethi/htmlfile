@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div class="desktop-only">This content is only visible on desktop.</div>
+	<div class="mobile-only">This content is only visible on mobile.</div>
+	<style>
+		.desktop-only{
+			display: block;
+			background-color:lightsalmon;
+		}
+		.mobile-only{
+			display: none;
+		}
+		@media screen and (max-width:600px)
+		{
+			.desktop-only
+			{
+		     display:none;
+			}
+		
+		.mobile-only
+		{
+			display: block;
+			background-color:lightpink;
+		}
+	}
+
+
+	</style>
+
+
+
+
+</body>
+</html>
